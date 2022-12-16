@@ -46,6 +46,7 @@ nav {
 }
 
 .navigation ul li a {
+  width: 100%;
   text-decoration: none;
   position: relative;
   display: flex;

@@ -5,6 +5,10 @@ import { Add } from './pages/add';
 import  { Password } from './pages/password';
 import { Home } from './pages/home';
 
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faHouse, faLock, faPlus } from "@fortawesome/free-solid-svg-icons"
+library.add(faPlus,faHouse,faLock)
+
 function App() {
   return (
     <Router>
@@ -12,9 +16,9 @@ function App() {
       <section className="content">
         <div className="inside_content">
           <Routes className="inside_content">
-            <Route path='/home' exact element={<Home/>} />
-            <Route path='/add' exact element={<Add/>} />
-            <Route path='/password'exact element={<Password/>} />
+            <Route path='/password-organizer' exact element={<Home/>} />
+            <Route path='/password-organizer/add' exact element={<Add/>} />
+            <Route path='/password-organizer/password'exact element={<Password/>} />
           </Routes>
         </div>
       </section>
@@ -22,13 +26,5 @@ function App() {
   );
 }
 
-const listItems = document.querySelectorAll(".list-item");
-listItems.forEach((item) => {
-  item.onclick = () => {
-    console.log("Clicccatofvsdf");
-    listItems.forEach((item) => item.classList.remove("active"));
-    item.classList.add("active");
-  };
-});
 
 export default App;
