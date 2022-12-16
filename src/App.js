@@ -16,7 +16,7 @@ function App() {
       <section className="content">
         <div className="inside_content">
           <Routes className="inside_content">
-            <Route path='/password-organizer' exact element={<Home/>} />
+            <Route path='/password-organizer/home' exact element={<Home/>} />
             <Route path='/password-organizer/add' exact element={<Add/>} />
             <Route path='/password-organizer/password'exact element={<Password/>} />
           </Routes>

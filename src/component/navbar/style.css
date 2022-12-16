@@ -41,7 +41,7 @@ nav {
   transition: 0.5s;
 }
 
-.navigation ul li.active a .icon{
+.navigation ul li a.active .icon{
   transform: translateY(-30px);
 }
 
@@ -71,7 +71,7 @@ nav {
   color: #222;
 }
 
-.navigation ul li.active a .icon {
+.navigation ul li a.active .icon {
   color: #fff;
   background: #6678da;
 }
