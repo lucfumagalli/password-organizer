@@ -16,16 +16,16 @@ section {
   display: flex;
   flex-flow: column wrap;
   align-content: center;
-  overflow: auto;
 }
 .inside_content{
   width: 95%;
   background: #fff;
-  height: 80vh;
+  height: 63vh;
   border-radius: 10px;
   padding: 20px 40px;
   margin: 20px 0px;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  overflow: auto;
 }

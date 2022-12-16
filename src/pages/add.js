@@ -1,7 +1,8 @@
+
 export function Add(){
   return (
     <div>
-      <h3>Sono add</h3>
+      <h2>Aggiungi nuova password</h2>
     </div>
   );
 }
