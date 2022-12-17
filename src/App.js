@@ -1,18 +1,18 @@
 import './App.css';
 import { Navigation } from './component/navbar/nav';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Add } from './pages/add';
+import  Add  from './pages/add';
 import  { Password } from './pages/password';
 import { Home } from './pages/home';
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faHouse, faLock, faPlus } from "@fortawesome/free-solid-svg-icons"
+import Form from './pages/form';
 library.add(faPlus,faHouse,faLock)
 
 function App() {
   return (
     <Router>
-      <Navigation/>
       <section className="content">
         <div className="inside_content">
           <Routes className="inside_content">
@@ -22,9 +22,9 @@ function App() {
           </Routes>
         </div>
       </section>
+      <Navigation/>
     </Router>
   );
 }
-
 
 export default App;
