@@ -7,7 +7,7 @@ import { Home } from './pages/home';
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faHouse, faLock, faPlus } from "@fortawesome/free-solid-svg-icons"
-import Form from './pages/form';
+import Form from './pages/form2';
 library.add(faPlus,faHouse,faLock)
 
 function App() {
