@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/password-organizer/static/css/main.25043516.css",
+    "main.css": "/password-organizer/static/css/main.ce075ed5.css",
     "main.js": "/password-organizer/static/js/main.b8f50350.js",
     "static/js/787.f0ff00a4.chunk.js": "/password-organizer/static/js/787.f0ff00a4.chunk.js",
     "index.html": "/password-organizer/index.html",
-    "main.25043516.css.map": "/password-organizer/static/css/main.25043516.css.map",
+    "main.ce075ed5.css.map": "/password-organizer/static/css/main.ce075ed5.css.map",
     "main.b8f50350.js.map": "/password-organizer/static/js/main.b8f50350.js.map",
     "787.f0ff00a4.chunk.js.map": "/password-organizer/static/js/787.f0ff00a4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.25043516.css",
+    "static/css/main.ce075ed5.css",
     "static/js/main.b8f50350.js"
   ]
 }
