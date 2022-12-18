@@ -33,7 +33,12 @@ export default function Form(){
             document.new_password.site.border = "#c43838"
             document.getElementById("input-error").style.display = "inline-grid"
         }else{
-            // window.location.reload()
+            require('dotenv').config()
+            const mysql = require('mysql2')
+            const connection = mysql.createConnection(process.env.DATABASE_URL)
+            console.log('Connected to PlanetScale!')
+            connection.end()
+            window.location.reload()
         }
     }
 
