@@ -26,18 +26,32 @@ export default function Form(){
         return (!str || str.length === 0 );
     }
 
+    function loadOnDatabase(formData){
+        const mysql = require('mysql2')
+        const connection = mysql.createConnection(process.env.DATABASE_URL)
+        require('dotenv').config()
+        console.log('Connected to PlanetScale!')
+
+        connection.execute(
+            `INSERT INTO password (site,email,password)
+            VALUES (?, ?, ?)
+            `
+            [
+                formData.site,
+                formData.email,
+                formData.password
+            ]
+        )
+        connection.end()
+    }
+
     function handleSubmit(event){
         event.preventDefault()
-        console.log(formData)
         if(isEmpty(formData.site)||isEmpty(formData.email)||isEmpty(formData.password)){
-            document.new_password.site.border = "#c43838"
             document.getElementById("input-error").style.display = "inline-grid"
         }else{
-            require('dotenv').config()
-            const mysql = require('mysql2')
-            const connection = mysql.createConnection(process.env.DATABASE_URL)
-            console.log('Connected to PlanetScale!')
-            connection.end()
+            loadOnDatabase(formData)
+            console.log(formData)
             window.location.reload()
         }
     }
