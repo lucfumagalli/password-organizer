@@ -26,23 +26,14 @@ export default function Form(){
         return (!str || str.length === 0 );
     }
 
-    function loadOnDatabase(formData){
-        const mysql = require('mysql2')
-        const connection = mysql.createConnection(process.env.DATABASE_URL)
-        require('dotenv').config()
-        console.log('Connected to PlanetScale!')
-
-        connection.execute(
-            `INSERT INTO password (site,email,password)
-            VALUES (?, ?, ?)
-            `
-            [
-                formData.site,
-                formData.email,
-                formData.password
-            ]
-        )
-        connection.end()
+    async function loadOnDatabase(formData){
+        // const config = {
+        //     host: process.env.DATABASE_HOST,
+        //     username: process.env.DATABASE_USERNAME,
+        //     password: process.env.DATABASE_PASSWORD
+        // }
+        // const conn = connect(config)
+        // const results = await conn.execute('select 1 from dual where 1=?', [1])
     }
 
     function handleSubmit(event){
