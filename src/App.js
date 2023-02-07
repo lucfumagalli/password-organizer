@@ -3,7 +3,7 @@ import { Navigation } from './component/navbar/nav';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import  Add  from './pages/add';
 import  { Password } from './pages/password';
-import { Home } from './pages/home';
+import {Home} from './pages/home';
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faHouse, faLock, faPlus } from "@fortawesome/free-solid-svg-icons"
