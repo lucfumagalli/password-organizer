@@ -1,7 +1,7 @@
 export function Home(){
     return (
       <div>
-        <h3>Sono Homeeee</h3>
+        <h3>Sono Homeeee Branchata</h3>
       </div>
     );
   }
